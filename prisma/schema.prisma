@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model Transactions {
+  id              Int @id @default(autoincrement())
+  transaction     String? @unique
+  account         String?
+  description     String?
+  category        String?
+  reference       String?
+  currency        String?
+  amount          Float?
+  status          String?
+  transactionDate DateTime? @db.Timestamp(6)
+  createdAt       DateTime? @db.Timestamp(6)
+  updatedAt       DateTime? @db.Timestamp(6)
+
+  @@index([id], name: "ix_Transactions_id")
+}

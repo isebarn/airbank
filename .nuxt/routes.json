@@ -1,0 +1,23 @@
+[
+  {
+    "name": "detail",
+    "path": "/detail",
+    "component": "/home/david/airbank/pages/detail.vue",
+    "chunkName": "pages/detail",
+    "_name": "_cd0dfa62"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/home/david/airbank/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_b8772668"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/david/airbank/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_c61e9578"
+  }
+]
